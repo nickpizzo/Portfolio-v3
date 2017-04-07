@@ -1,2 +1,21 @@
+$Poppins: 'Poppins', sans-serif;
+$OpenSans: 'Open Sans', sans-serif;
+$Roboto: 'Roboto', sans-serif;
+
+// @font-face {
+//   font-family: Futura;
+//   src: url('../fonts/Futura-Bold.woff') format("WOFF");
+// }
+
+@font-face {
+  font-family: Futura;
+  src: url('../fonts/Futura-Medium.woff') format("WOFF");
+}
+
+// @font-face {
+//   font-family: Futura;
+//   src: url('../fonts/Futura-Bold.woff') format("WOFF");
+// }
+
 @import 'reset';
 @import 'layout';
