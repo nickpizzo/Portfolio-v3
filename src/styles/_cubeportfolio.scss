@@ -49,7 +49,7 @@
   transform: translateY(-44px); }
 
 .cbp-l-filters-alignCenter .cbp-filter-counter, .cbp-l-filters-alignRight .cbp-filter-counter, .cbp-l-filters-button .cbp-filter-counter, .cbp-l-filters-buttonCenter .cbp-filter-counter, .cbp-l-filters-text .cbp-filter-counter {
-  font: 400 11px/18px "Open Sans", sans-serif;
+  font: 400 16 "Open Sans", sans-serif;
   border-radius: 3px;
   color: #FFFFFF;
   margin: 0 auto;
@@ -829,10 +829,11 @@
     border: 1px solid #ECECEC;
     color: #888888;
     cursor: pointer;
-    font: 400 12px/32px "Roboto", sans-serif;
+    font: 400 12px/32px "Open Sans", sans-serif;
+    font-size: 14px;
     margin: 0 5px 10px 5px;
     overflow: visible;
-    padding: 0 17px;
+    padding: 8px 18px;
     position: relative;
     display: inline-block;
     -webkit-transition: color .3s ease-in-out, border-color .3s ease-in-out;
@@ -840,17 +841,18 @@
     .cbp-l-filters-buttonCenter .cbp-filter-item:hover {
       color: #5d5d5d; }
     .cbp-l-filters-buttonCenter .cbp-filter-item.cbp-filter-item-active {
-      color: #3B9CB3;
-      border-color: #8CD2E5;
+      color: $darkblue;
+      border-color: $darkblue;
       cursor: default; }
     .cbp-l-filters-buttonCenter .cbp-filter-item:first-child {
       margin-left: 0; }
     .cbp-l-filters-buttonCenter .cbp-filter-item:last-child {
       margin-right: 0; }
   .cbp-l-filters-buttonCenter .cbp-filter-counter {
-    background-color: rgb(147, 221, 43); }
+    background-color: $lightblue;
+    font-size: 12px;}
     .cbp-l-filters-buttonCenter .cbp-filter-counter:after {
-      border-top: 4px solid rgb(147, 221, 43); }
+      border-top: 4px solid $lightblue }
 
 .cbp-l-filters-dropdown {
   margin-bottom: 40px;

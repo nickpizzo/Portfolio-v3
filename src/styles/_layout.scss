@@ -20,29 +20,17 @@ header {
       color: white;
       font-size: 60px;
       padding: 20px 40px;
-      background-color: #465164;
+      background-color: $darkblue;
     }
     h2:nth-of-type(2) {
 
       color: white;
       font-size: 60px;
       padding: 20px 40px;
-      background-color: #6194DF;
+      background-color: $lightblue;
       margin-left: 35px;
     }
   }
-}
-
-#about:before {
-  background-color: #465164;
-  content: '';
-  display: block;
-  height: 100%;
-  left: -50%;
-  position: absolute;
-  top: 70%;
-  transform: rotate(45deg);
-  width: 100%;
 }
 
 // #about:after {
@@ -63,6 +51,18 @@ header {
   font-family: $OpenSans;
   font-size: 20px;
   color: rgb(74, 74, 74);
+
+  &:before {
+    background-color: $darkblue;
+    content: '';
+    display: block;
+    height: 100%;
+    left: -50%;
+    position: absolute;
+    top: 70%;
+    transform: rotate(45deg);
+    width: 100%;
+  }
 
   .about-wrap {
     padding-top: 135px;
@@ -85,7 +85,7 @@ header {
           text-decoration: none;
           letter-spacing: 1px;
           margin-top: 20px;
-          color: #7c0500;
+          color: $accent;
         }
       }
       .about-pic {
@@ -97,7 +97,7 @@ header {
           bottom: 7%;
           left: -18px;
           z-index: 2;
-          border: 2px solid #d00800;
+          border: 2px solid $accent;
           background: 0 0;
           -webkit-transition: -webkit-transform .2s cubic-bezier(.455,.03,.515,.955);
           transition: transform .2s cubic-bezier(.455,.03,.515,.955);
@@ -123,31 +123,99 @@ header {
   }
 }
 
+#send-card {
+  padding: 60px 0 80px 0;
+  h1 { @include section-heading(); }
+  #contact {
+    max-width: 970px;
+    margin: auto;
+  }
+
+  #contact p {
+    text-align: center;
+    font-family: $OpenSans;
+    font-size: 16px;
+    font-weight: 200;
+    color: white;
+  }
+
+  #card {
+    background: white;
+    margin: auto;
+    height: 400px;
+    width: 650px;
+    border: solid 3px black;
+    position: relative;
+  }
+
+  #leftbox {
+    float: left;
+    width: 50%;
+    overflow: hidden;
+  }
+
+  #rightbox {
+    float: right;
+    width: 50%;
+  }
+
+  textarea {
+    margin: 20px;
+    height: 275px;
+    width: 285px;
+    border: none;
+    resize: none;
+    font-size: 16px;
+    font-family: $OpenSans;
+    &:focus {
+      outline: none;
+    }
+  }
+
+  #send input {
+    margin: 0 20px 20px 20px;
+    height: 50px;
+    width: 285px;
+    text-align: center;
+    background-color: #404040;
+    color: white;
+    border-style: none;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: bold;
+    font-family: $OpenSans;
+    letter-spacing: 2px;
+    &:focus {
+      outline: none;
+    }
+  }
+
+  .line {
+    margin-top: 10%;
+    height: 340px;
+    border-right: solid 1px black;
+  }
+
+  #input {
+    padding-top: 180px;
+    input {
+      margin: 20px 20px 40px 30px;
+      display: block;
+      width: 265px;
+      font-size: 16px;
+      border: none;
+      border-bottom: dotted 2px black;
+      font-family: $OpenSans;
+      &:focus {
+        outline: none;
+      }
+    }
+  }
+}
+
 @supports(clip-path: url("#angle-up-right")) {
   #about {
     padding-bottom: 90px;
-  }
-}
-
-.about-space {
-  background-color: #fff;
-  background-color: rgba(255, 255, 255, 0.85);
-  border: 10px solid #000;
-  color: #000;
-  margin: 0 -20px 30px;
-  overflow: auto;
-  padding: 20px;
-}
-
-@media screen and (min-width: 480px) {
-  .about-space {
-    margin: 0 auto;
-  }
-}
-
-@media(min-height: 600px) {
-  .about-space {
-    min-height: 420px;
   }
 }
 
@@ -164,20 +232,14 @@ header {
 
 #works {
   background-color: #f8f8f8;
-  padding: 40px 0;
+  padding: 25px 0 75px 0;
   min-height: 1000px;
   position: relative;
   .works-wrapper {
     max-width: 1200px;
     width: 97%;
     margin: 0 100px auto;
-    h1 {
-      font-family: $Poppins;
-      text-align: center;
-      font-size: 38px;
-      color: #465164;
-      padding: 15px 0 55px 0;
-    }
+    h1 { @include section-heading(); }
   }
 }
 
