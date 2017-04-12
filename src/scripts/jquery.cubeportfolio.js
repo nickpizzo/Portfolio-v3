@@ -4243,20 +4243,26 @@ if (typeof Object.create !== 'function') {
             }).appendTo(t.navigation);
 
             // next
-            t.nextButton = $('<div/>', {
-                'class': 'cbp-popup-next',
-                'title': 'Next (Right arrow key)',
-                'data-action': 'next'
-            }).appendTo(t.navigation);
+            t.nextButton = $().appendTo(t.navigation);
 
+            // this was inside parens
+
+            // '<div/>', {
+            //     'class': 'cbp-popup-next',
+            //     'title': 'Next (Right arrow key)',
+            //     'data-action': 'next'
+            // }
 
             // prev
-            t.prevButton = $('<div/>', {
-                'class': 'cbp-popup-prev',
-                'title': 'Previous (Left arrow key)',
-                'data-action': 'prev'
-            }).appendTo(t.navigation);
+            t.prevButton = $().appendTo(t.navigation);
 
+            // this was inside parens
+
+            // '<div/>', {
+            //     'class': 'cbp-popup-prev',
+            //     'title': 'Previous (Left arrow key)',
+            //     'data-action': 'prev'
+            // }
 
             if (t.type === 'singlePage') {
                 if (t.options.singlePageCounter) {
@@ -4636,7 +4642,7 @@ if (typeof Object.create !== 'function') {
                 if (t.options.singlePageStickyNavigation) {
 
                     t.wrap.addClass('cbp-popup-singlePage-sticky');
-                    t.navigationWrap.width(t.contentWrap[0].clientWidth);
+
                 }
 
                 t.finishOpen--;

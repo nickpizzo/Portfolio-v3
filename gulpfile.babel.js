@@ -11,12 +11,20 @@ import sass from 'gulp-sass';
 const sync = browserSync.create();
 
 gulp.task('html', () => {
-  gulp.src('src/**/*.html')
+  gulp.src('src/*.html')
     .pipe(gulp.dest('dist'))
     .pipe(sync.reload({
       stream: true
     }));
-    gulp.src('src/CNAME').pipe(gulp.dest('dist'))
+    // gulp.src('src/CNAME').pipe(gulp.dest('dist'))
+});
+
+gulp.task('html-pages', () => {
+  gulp.src('src/ajax-masonry-projects/*.html')
+    .pipe(gulp.dest('dist/ajax-masonry-projects'))
+    .pipe(sync.reload({
+      stream: true
+    }));
 });
 
 gulp.task('script', () => {
@@ -42,7 +50,7 @@ gulp.task('images', () => {
   .pipe(gulp.dest('dist/images'))
 });
 
-gulp.task('build', ['html', 'script', 'styles', 'images']);
+gulp.task('build', ['html', 'html-pages', 'script', 'styles', 'images']);
 
 gulp.task("deploy", ["build"], () => {
   ghPages.publish("dist");
@@ -54,6 +62,7 @@ gulp.task('serve', ['build'], () => {
   });
 
   gulp.watch('src/**/*.html', ['html']);
+  gulp.watch('src/ajax-masonry-projects/*.html', ['html-pages']);
   gulp.watch('src/**/*.{css,scss,less}', ['styles']);
   gulp.watch('src/scripts/*.js', ['script']);
   gulp.watch('src/styles/images/*', ['images']);

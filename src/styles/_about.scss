@@ -1,0 +1,108 @@
+#about {
+  position: relative;
+  overflow: hidden;
+  font-family: $OpenSans;
+  font-size: 20px;
+  color: rgb(74, 74, 74);
+
+  &:before {
+    background-color: $darkblue;
+    content: '';
+    display: block;
+    height: 100%;
+    left: -50%;
+    position: absolute;
+    top: 70%;
+    transform: rotate(45deg);
+    width: 100%;
+  }
+
+  // &:after {
+  //   background-color: #C4CAD0;
+  //   bottom: 71%;
+  //   content: '';
+  //   display: block;
+  //   height: 120%;
+  //   left: -50%;
+  //   position: absolute;
+  //   transform: rotate(-45deg);
+  //   width: 100%;
+  // }
+
+  .about-wrap {
+    padding-top: 135px;
+    padding-bottom: 135px;
+    max-width: 1000px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 275px 1fr;
+    grid-gap: 45px;
+    .about-left {
+      grid-column-start: 1;
+      .about-links {
+        font-family: $Poppins;
+        font-size: 16px;
+        font-weight: 600;
+        display: flex;
+        flex-flow: column;
+        align-items: flex-end;
+        a {
+          text-decoration: none;
+          letter-spacing: 1px;
+          margin-top: 20px;
+          color: $accent;
+        }
+        p { margin-top: 20px; }
+      }
+      .about-pic {
+        position: relative;
+        .about-pic-border {
+          width: 273px;
+          height: 273px;
+          position: absolute;
+          bottom: 7%;
+          left: -18px;
+          z-index: 2;
+          border: 2px solid $accent;
+          background: 0 0;
+          -webkit-transition: -webkit-transform .2s cubic-bezier(.455,.03,.515,.955);
+          transition: transform .2s cubic-bezier(.455,.03,.515,.955);
+          &:hover {
+            transform-origin: top right;
+            transform: translate(-.75em,-.75em);
+            transition: transform .2s cubic-bezier(.455,.03,.515,.955);
+          }
+        }
+      }
+    }
+    .about-right {
+      grid-column-start: 2;
+      h3 {
+        font-size: 28px;
+        font-weight: 500;
+        line-height: 34px;
+        font-family: $Poppins;
+      }
+      p {
+        line-height: 28px;
+      }
+    }
+  }
+}
+
+@supports(clip-path: url("#angle-up-right")) {
+  #about {
+    padding-bottom: 90px;
+  }
+}
+
+.clip-paths {
+  border: 0;
+  clip: rect(0 0 0 0);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute!important;
+  width: 1px;
+}

@@ -8,17 +8,17 @@
         defaultFilter: '*',
         animationType: 'quicksand',
         gapHorizontal: 35,
-        gapVertical: 25,
+        gapVertical: 55,
         gridAdjustment: 'responsive',
         mediaQueries: [{
             width: 1500,
             cols: 5,
         }, {
             width: 1100,
-            cols: 4,
+            cols: 3,
         }, {
             width: 800,
-            cols: 3
+            cols: 2
         }, {
             width: 480,
             cols: 2,

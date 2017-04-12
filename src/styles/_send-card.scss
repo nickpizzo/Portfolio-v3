@@ -1,0 +1,97 @@
+#send-card {
+  padding: 60px 0 90px 0;
+  h1 { @include section-heading(); }
+  #contact {
+    max-width: 970px;
+    margin: auto;
+  }
+
+  #contact p {
+    text-align: center;
+    font-family: $OpenSans;
+    font-size: 16px;
+    font-weight: 200;
+    color: white;
+  }
+
+  #card {
+    background: white;
+    margin: auto;
+    height: 400px;
+    width: 650px;
+    border: solid 3px black;
+    position: relative;
+  }
+
+  #leftbox {
+    float: left;
+    width: 50%;
+    overflow: hidden;
+    img {
+      position: absolute;
+      margin: 5px;
+      max-width: 150px;
+    }
+  }
+
+  #rightbox {
+    float: right;
+    width: 50%;
+  }
+
+  textarea {
+    margin: 20px;
+    height: 275px;
+    width: 285px;
+    border: none;
+    resize: none;
+    font-size: 16px;
+    font-family: $OpenSans;
+    &:focus {
+      outline: none;
+    }
+  }
+
+  #send input {
+    margin: 0 20px 20px 20px;
+    height: 50px;
+    width: 285px;
+    text-align: center;
+    background-color: $lightblue;
+    color: white;
+    border-style: none;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: bold;
+    font-family: $OpenSans;
+    letter-spacing: 2px;
+    &:focus {
+      outline: none;
+    }
+    &:hover {
+      cursor: pointer;
+    }
+  }
+
+  .line {
+    margin-top: 10%;
+    height: 340px;
+    border-right: solid 1px black;
+  }
+
+  #input {
+    padding-top: 120px;
+    input {
+      margin: 20px 20px 40px 30px;
+      display: block;
+      width: 265px;
+      font-size: 16px;
+      border: none;
+      border-bottom: dotted 2px black;
+      font-family: $OpenSans;
+      &:focus {
+        outline: none;
+      }
+    }
+  }
+}

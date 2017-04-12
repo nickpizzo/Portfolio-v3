@@ -11,10 +11,10 @@ $Roboto: 'Roboto', sans-serif;
 //   src: url('../fonts/Futura-Bold.woff') format("WOFF");
 // }
 
-@font-face {
-  font-family: Futura;
-  src: url('../fonts/Futura-Medium.woff') format("WOFF");
-}
+// @font-face {
+//   font-family: Futura;
+//   src: url('../fonts/Futura-Medium.woff') format("WOFF");
+// }
 
 // @font-face {
 //   font-family: Futura;
@@ -29,20 +29,41 @@ $Roboto: 'Roboto', sans-serif;
   padding: 15px 0 55px 0;
 }
 
-input[type="submit"] {
-  align-items: stretch;
-  text-align: left;
-  cursor: default;
-  color: buttontext;
-  background-color: buttonface;
-  box-sizing: border-box;
-  padding: 2px 6px 3px;
-  border-width: 2px;
-  border-style: outset;
-  border-color: buttonface;
-  border-image: initial;
+@mixin article-heading() {
+  font-family: $Poppins;
+  text-align: center;
+  font-size: 32px;
+  color: #465164;
+  padding: 15px 0 55px 0;
 }
+
+@mixin article-body() {
+  font-family: $Roboto;
+  text-align: center;
+  font-size: 21px;
+  color: #465164;
+  padding: 15px 0 55px 0;
+}
+
+//
+// input[type="submit"] {
+//   align-items: stretch;
+//   text-align: left;
+//   cursor: default;
+//   color: buttontext;
+//   background-color: buttonface;
+//   box-sizing: border-box;
+//   padding: 2px 6px 3px;
+//   border-width: 2px;
+//   border-style: outset;
+//   border-color: buttonface;
+//   border-image: initial;
+// }
 
 @import 'reset';
 @import 'cubeportfolio';
-@import 'layout';
+@import 'works';
+@import 'header';
+@import 'about';
+@import 'send-card';
+@import 'footer';
