@@ -40,9 +40,17 @@ $Roboto: 'Roboto', sans-serif;
 @mixin article-body() {
   font-family: $Roboto;
   text-align: center;
-  font-size: 21px;
+  font-size: 24px;
+  line-height: 18px;
   color: #465164;
   padding: 15px 0 55px 0;
+}
+
+@mixin article-caption() {
+  text-align: center;
+  font-family: $Roboto;
+  font-size: 14px;
+  color: #a8a8a8;
 }
 
 //
