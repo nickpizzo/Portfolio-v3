@@ -2272,7 +2272,7 @@
   position: relative;
   z-index: 1;
   margin-top: 115px;
-  max-width: 1024px; }
+  max-width: 1200px; }
 
 .cbp-popup-singlePage .cbp-popup-content .cbp-popup-article-wrap {
   max-width: 750px;
@@ -2290,18 +2290,25 @@
     letter-spacing: .5px;
   }
   a {
-    text-decoration: none;
     color: $lightblue;
   }
 }
 
 #rogue-card {
+  img {
   display: block;
   margin: auto;
   width: 35%;
   height: auto;
   margin-top: 35px;
-
+  }
+  div {
+    display: flex;
+    flex-direction: column;
+  }
+  span {
+    @include article-caption();
+  }
 }
 
 .cbp-popup-singlePage .cbp-popup-content .cbp-popup-img-wrap {
@@ -2315,15 +2322,15 @@
     height: auto;
   }
   p {
-    text-align: center;
-    font-family: $Roboto;
-    font-size: 14px;
-    color: #a8a8a8;
+    @include article-caption();
   }
-  img:nth-of-type(1) { grid-area: 1 / 1; }
-  img:nth-of-type(2) { grid-area: 1 / 2; }
-  p:nth-of-type(1) { grid-area: 2 / 1; }
-  p:nth-of-type(2) { grid-area: 2 / 2; }
+  div {
+    margin: 20px;
+  }
+  // img:nth-of-type(1) { grid-area: 1 / 1; }
+  // img:nth-of-type(2) { grid-area: 1 / 2; }
+  // p:nth-of-type(1) { grid-area: 2 / 1; }
+  // p:nth-of-type(2) { grid-area: 2 / 2; }
 
 }
 
