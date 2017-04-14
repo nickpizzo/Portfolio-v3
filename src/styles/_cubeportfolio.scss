@@ -313,7 +313,7 @@
   min-width: 90px;
   text-align: center;
   margin: 4px;
-  padding: 0 6px; }
+  padding: 0 16px; }
 
 .cbp-l-caption-buttonLeft:hover,
 .cbp-l-caption-buttonRight:hover {
@@ -2325,7 +2325,7 @@
     @include article-caption();
   }
   div {
-    margin: 20px;
+    margin: 0 20px;
   }
   // img:nth-of-type(1) { grid-area: 1 / 1; }
   // img:nth-of-type(2) { grid-area: 1 / 2; }
@@ -2431,13 +2431,14 @@
   max-width: 750px !important;
   margin: 0 auto;
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-end;
 }
 
 .cbp-popup-singlePage-sticky .cbp-popup-navigation-wrap {
   position: fixed; }
 
 .cbp-popup-singlePage-counter {
+  display: none;
   color: #fff;
   margin: auto 0px;
   font: 400 14px "Open Sans", sans-serif;
@@ -2530,6 +2531,7 @@
   height: 40px;
   width: 40px;
   margin: auto 0px;
+  margin-left: 18px;
   // right: 20px;
   // top: 20px;
 }
@@ -2647,7 +2649,7 @@
     margin-right: 10px;
   }
   img {
-    width: 45px;
+    width: auto;
     height: 45px;
     margin: 0 2px;
   }
