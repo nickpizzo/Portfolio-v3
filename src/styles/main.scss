@@ -6,6 +6,10 @@ $Poppins: 'Poppins', sans-serif;
 $OpenSans: 'Open Sans', sans-serif;
 $Roboto: 'Roboto', sans-serif;
 
+$main-break: 1120px;
+$second-break: 678px;
+$third-break: 415px;
+
 // @font-face {
 //   font-family: Futura;
 //   src: url('../fonts/Futura-Bold.woff') format("WOFF");
@@ -71,6 +75,8 @@ $Roboto: 'Roboto', sans-serif;
 
 @import 'reset';
 @import 'cubeportfolio';
+@import 'gallery';
+@import 'gallery-theme';
 @import 'works';
 @import 'header';
 @import 'about';

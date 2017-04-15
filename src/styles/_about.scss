@@ -31,7 +31,7 @@
 
   .about-wrap {
     padding-top: 135px;
-    padding-bottom: 135px;
+    padding-bottom: 105px;
     max-width: 1000px;
     margin: 0 auto;
     display: grid;
@@ -105,4 +105,28 @@
   padding: 0;
   position: absolute!important;
   width: 1px;
+}
+
+@media screen and (max-width: $main-break) {
+  #about {
+    &:before {
+      left: -65%;
+    }
+    .about-wrap {
+      width: calc(100% - 8rem);
+      grid-gap: 25px;
+      .about-right {
+        h3 {
+          font-size: 22px;
+          font-weight: 500;
+          line-height: 34px;
+          font-family: $Poppins;
+        }
+        p {
+          line-height: 28px;
+          font-size: 18px;
+        }
+      }
+    }
+  }
 }

@@ -2422,7 +2422,7 @@
   left: 0;
   width: 100%;
   z-index: 10;
-  height: 65px;
+  height: 55px;
   background-color: rgba(#3d4750, 0.85); }
 
 .cbp-popup-singlePage .cbp-popup-navigation {
@@ -2431,7 +2431,6 @@
   max-width: 750px !important;
   margin: 0 auto;
   display: flex;
-  justify-content: flex-end;
 }
 
 .cbp-popup-singlePage-sticky .cbp-popup-navigation-wrap {
@@ -2527,7 +2526,7 @@
 
 /* CLOSE BUTTON LIGTHBOX */
 .cbp-popup-lightbox .cbp-popup-close {
-  background: url("../images/cbp-sprite.png") no-repeat scroll -92px 0 transparent;
+  background: url("../images/sprites/close.svg");
   height: 40px;
   width: 40px;
   margin: auto 0px;
@@ -2537,32 +2536,32 @@
 }
 
 .cbp-popup-lightbox .cbp-popup-close:hover {
-  background-position: -92px -46px; }
+  // color: grey;
+}
 
 /* CLOSE BUTTON SINGLEPAGE */
 .cbp-popup-singlePage .cbp-popup-close {
-  background: url("../images/cbp-sprite.png") no-repeat scroll -92px -92px transparent;
-  height: 44px;
-  width: 44px;
-  order: 2 !important;
+  background: url("../images/sprites/back.svg");
+  height: 35px;
+  width: 35px;
   margin: auto 0px;
   top: 0;
   right: 0;
   bottom: 0;
   left: 0; }
 
-.cbp-popup-singlePage .cbp-popup-close:hover {
-  background-position: -92px -138px; }
+// .cbp-popup-singlePage .cbp-popup-close:hover {
+//   background-position: -92px -138px; }
 
 .cbp-popup-singlePage .cbp-popup-ie8bg {
   background-color: #fff; }
 
 @media only screen and (max-width: 360px), (max-height: 600px) {
-  .cbp-popup-next,
-  .cbp-popup-prev,
-  .cbp-popup-close {
-    -webkit-transform: scale(0.8);
-    transform: scale(0.8); }
+  // .cbp-popup-next,
+  // .cbp-popup-prev,
+  // .cbp-popup-close {
+  //   -webkit-transform: scale(0.8);
+  //   transform: scale(0.8); }
   .cbp-popup-lightbox .cbp-popup-close {
     right: 10px;
     top: 10px; }

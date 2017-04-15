@@ -1,5 +1,8 @@
 {
   "private": true,
+  "scripts": {
+    "deploy": "cd dist && surge --domain nickpizzo.me"
+  },
   "devDependencies": {
     "babel-core": "^5.8.25",
     "babelify": "^6.3.0",
