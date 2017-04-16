@@ -95,3 +95,60 @@
     }
   }
 }
+
+@media screen and (max-width: $main-break) {
+  #send-card {
+    h1 {
+      font-size: 28px;
+    }
+  }
+}
+
+@media screen and (max-width: $second-break) {
+#send-card {
+  #send {
+    input {
+      margin: 0;
+      width: 317px;
+    }
+  }
+  #input {
+    input {
+      margin-left: 0px;
+    }
+  }
+  #contact {
+    max-width: 970px;
+    margin: 0 auto;
+    #card {
+      background: white;
+      margin: 0 auto;
+      height: auto;
+      border: none;
+      width: auto;
+      position: relative;
+      form {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        #rightbox {
+          width: auto;
+          textarea {
+            border: 1px solid;
+            margin: 10px 0 45px 0;
+            padding: 15px;
+          }
+        }
+        #leftbox {
+          width: auto;
+        }
+      }
+    }
+    .line {
+      border: none;
+      height: auto;
+    }
+
+  }
+}
+}

@@ -2263,7 +2263,11 @@
   display: inline-block;
   vertical-align: middle;
   text-align: left;
-  max-width: 100%; }
+  max-width: 100%;
+  .autoplay {
+    margin: 50px 0 5px 0;
+  }
+}
 
 .cbp-popup-lightbox .cbp-popup-content {
   display: flex; }
