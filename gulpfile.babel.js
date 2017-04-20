@@ -20,8 +20,8 @@ gulp.task('html', () => {
 });
 
 gulp.task('html-pages', () => {
-  gulp.src('src/ajax-masonry-projects/*.html')
-    .pipe(gulp.dest('dist/ajax-masonry-projects'))
+  gulp.src('src/projects/*.html')
+    .pipe(gulp.dest('dist/projects'))
     .pipe(sync.reload({
       stream: true
     }));
