@@ -62,7 +62,7 @@ gulp.task('serve', ['build'], () => {
   });
 
   gulp.watch('src/**/*.html', ['html']);
-  gulp.watch('src/ajax-masonry-projects/*.html', ['html-pages']);
+  gulp.watch('src/projects/*.html', ['html-pages']);
   gulp.watch('src/**/*.{css,scss,less}', ['styles']);
   gulp.watch('src/scripts/*.js', ['script']);
   gulp.watch('src/styles/images/*', ['images']);
